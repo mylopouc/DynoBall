@@ -22,6 +22,7 @@ Working environment:
 * Find correct integration scheme
 * Correct numerical analysis method
 * Optimize for speed
+* Write down results to a file
   
 ## Interface
 
