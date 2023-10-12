@@ -13,4 +13,9 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
+    # TODO: write all the functions that we will need for the Runge Kutta method
+    # TODO: write the scheme of the integration
+    # TODO: plot the results path (interactive plotting (?) )
+    # TODO: write results file
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
