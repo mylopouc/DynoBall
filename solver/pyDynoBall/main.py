@@ -1,21 +1,24 @@
 # This is a sample Python script.
-import py_solve_ode
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from py_solve_ode import Solver, Plot
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def run_game(dict_parameters):
+
+    solver = Solver(dict_parameters)
+
+    plot = Plot(solver.solve(), dict_parameters)
+
+    plot.plot_results()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-    # TODO: write all the functions that we will need for the Runge Kutta method
-    # TODO: write the scheme of the integration
-    # TODO: plot the results path (interactive plotting (?) )
-    # TODO: write results file
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    parameters = {
+        'radius': 10.0,
+        'initial_x_pos': 50.0,
+        'initial_y_pos': 80.0,
+        'initial_x_vel': 50.0,
+        'initial_y_vel': 150.0,
+        'simulation_end_time': 10.0,
+        'time_step': 0.02,
+    }
+    run_game(parameters)
