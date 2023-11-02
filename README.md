@@ -36,9 +36,14 @@ Working environment:
 
 ## Connection
 
-* Calling c++ DLL from Python (TODO) 
+* Calling c++ DLL from Python (TODO)
 
 Result Animation:
+![Animation results](https://github.com/mylopouc/DynoBall/assets/143400541/9951e28b-cf91-48d3-b7b8-fb55a8fe0ddc)
 
-![using a color picker](DynoBall_results.gif)
+
+
+
+
+
 
