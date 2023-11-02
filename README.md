@@ -1,12 +1,17 @@
 # DynoBall
 
-A game for real life ball movement.
+"""A game for real life ball movement."""
+
+Game instructions:
+
+Give the initial conditions of the ball and check the ball motion inside a 
+box.
 
 This application will consist:
 
-* Solver in c++
-* Python interface (Pygame ??)
-* Connection between them (Python with c++)
+* Solver in c++ (currently only Python is available)
+* Python interface 
+* Connection between them (call C++ with Python)
 
 
 Working environment:
@@ -17,18 +22,23 @@ Working environment:
   
 
 ## Solver
-* C++ language
-* Analytical dynamics
-* Find correct integration scheme
-* Correct numerical analysis method
-* Optimize for speed
-* Write down results to a file
+* C++ / Python language
+* Formulation with Lagrange equations.
+* Use Runge-Kutta 4th order explicit integration
+* Impact contact interaction between ball and the box
+* Drag force and friction force included
+* Export an Animation
   
 ## Interface
 
-* Pygame (?)
-* OpenGL in c++ (?)
+* Use tkinter and PIL (Work in progress)
+* Ask for the initial conditions and export the animation to the user
 
 ## Connection
 
-* calling DLL from Python (?) 
+* Calling c++ DLL from Python (TODO) 
+
+Result Animation:
+
+![using a color picker](DynoBall_results.gif)
+
